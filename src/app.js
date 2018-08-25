@@ -7,4 +7,4 @@ class Drone {
 
 let drone = new Drone('a123', 'tom');
 
-console.log(`drone: ${drone.id} drone name: ${drone.name}`);
+console.log(`drone: ${drone['id']} drone name: ${drone['name']}`);
