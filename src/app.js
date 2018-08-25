@@ -1,3 +1,7 @@
-const droneId = 5;
+class Drone {
 
-console.log(window.droneId);
+};
+
+let drone = new Drone();
+
+console.log(typeof drone);
