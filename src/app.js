@@ -1,7 +1,4 @@
 class Vehicle {
-  constructor(){
-    console.log('constructing vehicle');
-  };
 };
 
 class Drone extends Vehicle {
