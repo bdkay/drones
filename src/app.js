@@ -1,17 +1,15 @@
 class Drone {
-  constructor(id, name){
-    this.id = id;
-    this.name = name;
+  constructor(id){
+    this._id = id;
   }
-  fly(){
-    console.log(`Drone ${this.id} is flying.`);
+  get id(){
+    return this._id + ' TEMP';
   }
-};
+  set(value){
+    this._id = value;
+  }
+}
 
-Drone.maxHeight = 2000;
+let drone = new Drone('x3910');
 
-let drone1 = new Drone('a123', 'tom');
-let drone2 = new Drone('b456', 'steve');
-
-drone1.fly();
-drone2.fly();
+console.log(`drone id: ${drone.id}`);
