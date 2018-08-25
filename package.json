@@ -1,7 +1,6 @@
 {
   "name": "drones",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,10 +9,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.23.0",
     "es6-module-loader": "^0.17.11",
     "traceur": "0.0.108"
   },
   "devDependencies": {
-    "lite-server": "^2.2.0"
-  }
+    "lite-server": "^2.2.0",
+    "liteserver": "^0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdkay/drones.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bdkay/drones/issues"
+  },
+  "homepage": "https://github.com/bdkay/drones#readme",
+  "description": ""
 }
