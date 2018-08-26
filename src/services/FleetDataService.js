@@ -19,10 +19,13 @@ export class FleetDataService {
   getCarsSortedByLicense(){
     return this.cars.sort(function(car1, car2){
       if (car1.license < car2.license) {
+        // car1 is first alphabetically
         return -1;
       } else if (car1.license > car2.license){
+        // car2 is first alphabetically
         return 1;
       } else {
+        // they're the same
         return 0;
       }
     })
