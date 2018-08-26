@@ -16,6 +16,18 @@ export class FleetDataService {
     });
   }
   
+  getCarsSortedByLicense(){
+    return this.cars.sort(function(car1, car2){
+      if (car1.license < car2.license) {
+        return -1;
+      } else if (car1.license > car2.license){
+        return 1;
+      } else {
+        return 0;
+      }
+    })
+  }
+  
   loadData(fleet){
     for (let data of fleet){
       switch(data.type){
