@@ -31,6 +31,10 @@ export class FleetDataService {
     })
   }
   
+  filterCarsByMake(filter){
+    return this.cars.filter(car => car.make.indexOf(filter) >= 0);
+  }
+  
   loadData(fleet){
     for (let data of fleet){
       switch(data.type){
